@@ -8,10 +8,9 @@ County Votes:
 Jefferson County: 10.5% (38,855)
 Denver County: 82.8% (306,055)
 Arapahoe County: 6.7% (24,801)
+
 -------------------------
-County with Largest Turnout: Denver County
-Number of Votes Cast in Denver County: 306,055
-Percent of all votes cast in Denver County: 82.8%
+Largest County Turnout: Denver
 -------------------------
 Charles Casper Stockham: 23.0% (85,213)
 Diana DeGette: 73.8% (272,892)
