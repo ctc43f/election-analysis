@@ -28,4 +28,11 @@ Below are images containing the summary statistics requested by the election com
 
 ## Election Audit Summary
 
+The provided script can be be applied to any similarly structured data file containing ballot-level detail.  In order to apply the Python script to the file, it can be placed in the Resources folder of this repository; running the Python script will generate a results file in the Analysis folder.  This assumes the following about the file:
+
+1. The file used is a properly constructed CSV file titled election.results.csv.
+2. The first row of data in the file contains the column names for the subsequent rows of data.
+3. Each row represents a single ballot/a single vote cast.
+4. Columns 2 and 3 of the file contain county in which the vote was cast and candidate for whom the vote was cast, respectively.
+
 
