@@ -35,4 +35,18 @@ The provided script can be be applied to any similarly structured data file cont
 3. Each row represents a single ballot/a single vote cast.
 4. Columns 2 and 3 of the file contain county in which the vote was cast and candidate for whom the vote was cast, respectively.
 
+If the file contains vote-level data but the structure of the file is different, the below modifications will need to be made:
+- If the candidate name is in a different column, line 48 of the code will need to be modified.  Specifically, the number in brackets will need to be modified such that the number is one less than the column number in which the name appears.  If, for example, the Candidate Name was the first column in the data, the line should instead read:
+```
+candidate_name = row[0]
+#Column #1 minus 1 is 0
+```
+- Similarly, if the County is in column 11 of the CSV file, line 51 should read:
+```
+county_name = row[10]
+```
 
+
+### Future Modifications: Providing counts by candidate and district
+
+In the above we provided vote breakdown by candidate and county, independent of one another.  We could also look at breakdowns of vote by candidate and county to gain insights into where each candidate's core base resides.  In the Python script we used dictionaries to hold each county/candidate and corresponding vote count, we could instead create a nested dictionary for each candidate and rewrite a single if statement that checks whether or not a given county dictionary exists in the dictionary of said candidate and then add as needed or modify the vote count for that candidate/county combination.  (Note: this can also be accomplished more easily by using a Pandas Dataframe to create a summary statistics dataframe via if statement, which we will cover next week).
