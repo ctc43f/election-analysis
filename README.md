@@ -42,7 +42,6 @@ If the file contains vote-level data but the structure of the file is different,
 - If the candidate name is in a different column, line 48 of the code will need to be modified.  Specifically, the number in brackets will need to be modified such that the number is one less than the column number in which the name appears.  If, for example, the Candidate Name was the first column in the data, the line should instead read:
 ```
 candidate_name = row[0]
-#Column #1 minus 1 is 0
 ```
 - Similarly, if the County is in column 11 of the CSV file, line 51 should read:
 ```
