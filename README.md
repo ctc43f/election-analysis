@@ -28,11 +28,4 @@ Below are images containing the summary statistics requested by the election com
 
 ## Election Audit Summary
 
-### - What are the advantages or disadvantages of refactoring code?
-
-Included in this repository is a Python script that can process similarly structured CSV files and provide the same types of summary statistics.  Assumptions about the structure of the data file in order for the script to run properly and provide identical summary statistics:
-1. The provided file is named "election_results.csv" and saved in the Resources directory of the repository prior to running the code.
-2. The first row of the CSV file contains header detail about subsequent rows (column headers) and does not contain actual data.
-3. Column 2 of the file contains the name of the County in which the vote was cast.
-4. Column 3 contains the name of the candidate for whom the ballot was cast.
 
